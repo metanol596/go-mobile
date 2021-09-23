@@ -1,0 +1,156 @@
+.promo {
+	padding: 0 50px 70px 120px;
+
+	@include viewport--lg {
+    padding: 0 50px 70px;
+  }
+
+	@include viewport--md {
+    padding: 0 50px 50px;
+  }
+
+	@include viewport--sm {
+		padding: 0 20px 12px;
+	}
+}
+
+.promo__inner-conteiner {
+	display: flex;
+	justify-content: space-between;
+
+	@include viewport--sm {
+		flex-direction: column;
+		justify-content: center;
+	}
+}
+
+.promo__full-text-wrap {
+	margin-right: 50px;
+
+	@include viewport--md {
+		margin-right: 0;
+	}
+
+	@include viewport--sm {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 27px;
+	}
+}
+
+.promo__lead-text {
+	display: flex;
+	flex-direction: column;
+
+	@include viewport--sm {
+		margin: 0;
+	}
+}
+
+.promo__percent-text {
+ 	font-family: $font-family--oswald;
+ 	font-weight: bold;
+ 	font-size: 115px;
+ 	line-height: 150px;
+ 	color: #ffcc00;
+
+	@include viewport--sm {
+		font-size: 93px;
+    line-height: 69px;
+    text-align: center;
+
+		margin-bottom: 15px;
+	}
+ }
+  
+.promo__lead-sub-text {
+  font-family: $font-family--arimo;
+	font-weight: bold;
+}
+  
+.promo__lead-sub-text--upper {
+	font-size: 67px;
+	line-height: 67px;
+
+	@include viewport--sm {
+		font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+	}
+}
+  
+.promo__lead-sub-text--lower {
+	font-size: 47.5px;
+	line-height: 47px;
+
+	@include viewport--sm {
+		font-size: 31px;
+		line-height: 31px;
+		text-align: center;
+	}
+}
+
+.promo__invite-text {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 30px;
+}
+
+.promo__invite-sub-text--upper {
+	font-size: 27px;
+	line-height: 32px;
+
+	@include viewport--sm {
+		font-size: 15px;
+    line-height: 22px;
+		text-align: center;	
+	}
+}
+
+.promo__invite-sub-text--lower {
+	font-size: 22.5px;
+	line-height: 26px;
+
+	@include viewport--sm {
+		font-size: 13px;
+    line-height: 16px;
+		text-align: center;	
+	}
+}
+
+.promo__invite-link {
+	font-family: $font-family--roboto-condensed;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 41px;
+	color: #000000;
+
+	background-color: #ffcc00;
+
+	width: 327px;
+	padding: 21px;
+	text-align: center;
+	border-radius: 10px;
+	display: inline-block;
+	vertical-align: middle;
+
+	@include viewport--sm {
+		font-size: 15px;
+	  line-height: 18px;
+
+		width: 157px;
+		padding: 10px;
+	}
+}
+
+.promo__img {
+	width: 57.4%;
+	height: auto;
+	object-fit: contain;
+
+	@include viewport--sm {
+		width: 289px;
+		margin: 0 auto;
+	}
+}

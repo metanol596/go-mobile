@@ -1,0 +1,24 @@
+.page-header {
+	padding: 66px 120px 0;
+
+  @include viewport--lg {
+    padding: 43px 50px 23px;
+  }
+
+  @include viewport--md {
+    padding: 20px 50px;
+  }
+
+  @include viewport--sm {
+    padding: 20px;
+    max-width: 320px;
+  }
+}
+
+.page-header__logo-icon {
+  @include viewport--sm {
+    width: 24%;
+    height: auto;
+    object-fit: contain;
+  }
+}

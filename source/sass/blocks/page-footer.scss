@@ -1,0 +1,108 @@
+.page-footer {
+	background-color: #0e0e0e;
+}
+
+.page-footer__container {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 120px;
+
+	@include viewport--lg {
+    padding: 43px 50px 23px;
+  }
+
+  @include viewport--md {
+    padding: 20px 50px;
+  }
+
+	@include viewport--sm {
+    padding: 12px 20px;
+		flex-wrap: wrap;
+		max-width: 320px;
+  }
+}
+
+.page-footer__app-links-wrap {
+	@include viewport--sm {
+		display: grid;
+    grid-template-columns: 69px 69px;
+    column-gap: 8px;
+	}
+}
+
+.page-footer__app-link {
+	display: inline-flex;
+	margin-right: 32px;
+
+	@include viewport--md {
+		margin-bottom: 15px;
+	}
+
+	@include viewport--sm {
+		margin-right: 0;
+		width: 100%;
+	}
+}
+
+.page-footer__app-icon {
+	object-fit: contain;
+
+	@include viewport--sm {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.page-footer__rules-link {
+	font-size: 23px;
+	line-height: 27px;
+	text-decoration-line: underline;
+	color: #ffffff;
+
+	@include viewport--md {
+		margin-right: 50px;
+	}
+
+	@include viewport--sm {
+		font-size: 10px;
+		line-height: 12px;
+
+		margin: 0 0 15px;
+		order: -1;
+    width: 100%;
+    text-align: center;
+	}
+}
+
+.page-footer__clubs-block {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	width: 246px;
+	justify-content: space-between;
+
+	@include viewport--sm {
+		width: 104px;
+		align-items: center;
+	}
+}
+
+.page-footer__club-item {
+	@include viewport--md {
+		margin-right: 10px;
+
+		&:last-of-type {
+			margin-right: 0;
+		}
+	}
+}
+
+.page-footer__club-img {
+	object-fit: contain;
+	
+	@include viewport--sm {
+		width: 16px;
+		height: auto;
+	}
+}
